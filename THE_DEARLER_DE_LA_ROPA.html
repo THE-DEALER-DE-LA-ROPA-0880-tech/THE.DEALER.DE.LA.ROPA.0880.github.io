@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Dealer De La Ropa — Tienda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>The Dealer De La Ropa</h1>
+        <p class="slogan">“The Dealer De La Ropa, lo mejor de Cúcuta.”</p>
+      </div>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <button id="btn-cart" aria-label="Abrir carrito">Carrito (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+
+    <div class="hero" id="inicio">
+      <div class="hero-left">
+        <h2>Lo mas nuevo en The Dearler De La Ropa</h2>
+       
+        <div class="hero-ctas">
+          <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+          <a href="#contacto" class="btn btn-ghost">Contáctanos</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="LOGO THE DEALER DE LA ROPA.jpeg"  />
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <input id="search" placeholder="Buscar gorras, zapatos, pantalones, camisas..." />
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="catalogo" class="section">
+      <h2 class="section-title">Catálogo</h2>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="todos">Todos</button>
+        <button class="tab" data-tab="gorras">Gorras</button>
+        <button class="tab" data-tab="camisas">Camisas</button>
+        <button class="tab" data-tab="pantalones">Pantalones</button>
+        <button class="tab" data-tab="zapatos">Zapatos</button>
+        <button class="tab" data-tab="accesorios">Accesorios</button>
+      </div>
+
+      <div id="products" class="product-grid">
+        <article class="product" data-id="g1" data-cat="Zapatos" data-price="45000">
+          <div class="product-media">
+            <img src="ZAPATILLA JORDAN AURA.webp" alt="Gorra - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Zapatilla  Jordan AURA</h3>
+            <p class="product-desc">Material: <span class="field material">cuero, malla y caucho</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">38,39,40,41,42,43,44</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Blancos con detalles en rojo UNICO</span></p>
+            <p class="product-price">COP <span class="price">800.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product" data-id="c1" data-cat="camisas" data-price="85000">
+          <div class="product-media">
+            <img src="Camisa Jordan Blanca.webp" alt="Camisa"/>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">camisa jordan</h3>
+            <p class="product-desc">Material: <span class="field material"> 100% Algodon</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">M,L,XL</span></p>
+            <p class="product-desc">Colores: <span class="field colors">blanca unico </span></p>
+            <p class="product-price">COP <span class="price">85.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+         <article class="product" data-id="g1" data-cat="Zapatos" data-price="45000">
+          <div class="product-media">
+            <img src="Air Jordan 11 Retro Rare Air.webp" alt="Gorra - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Zapatilla  Air Jordan 11 Retro </h3>
+            <p class="product-desc">Material: <span class="field material">cuero,goma y tela</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">38,39,40,41,42,43,44</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Azul royal intenso/Vela/Negro/Rojo pasión UNICO</span></p>
+            <p class="product-price">COP <span class="price">1.384.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+
+ <article class="product" data-id="g1" data-cat="Zapatos" data-price="45000">
+          <div class="product-media">
+            <img src="Air Jordan 1 Mid Se.webp" alt="Gorra - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Zapatilla Air Jordan 1 Mid Se </h3>
+            <p class="product-desc">Material: <span class="field material">cuero,goma y tela</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">38,39,40,41,42,43,44</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Rojo Oscuro con detalles en Negro UNICO</span></p>
+            <p class="product-price">COP <span class="price">854.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+<article class="product" data-id="g1" data-cat="Zapatos" data-price="45000">
+          <div class="product-media">
+            <img src="Air Jordan Dub Zero.webp" alt="Gorra - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Zapatilla Air Jordan Dub Zero </h3>
+            <p class="product-desc">Material: <span class="field material">cuero,goma y tela</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">38,39,40,41,42,43,44</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Blanco/Negro/Rojo universitarioUNICO</span></p>
+            <p class="product-price">COP <span class="price">578.00</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="product" data-id="p1" data-cat="Sudaderas" data-price="95000">
+          <div class="product-media">
+            <img src="Sudadera Jordan.webp" alt="Pantalón - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-titl">Sudadera Jordan </h3>
+            <p class="product-desc">Material: <span class="field material">80% algodón, 20% poliéster. Interior de los bolsillos: 100% algodón.</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">30 / 32 / 34</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Negro / Café</span></p>
+            <p class="product-price">COP <span class="price">95.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+  <article class="product" data-id="p1" data-cat="Camisas" data-price="95000">
+          <div class="product-media">
+            <img src="Camisa Jordan Basica Negra.webp"  />
+          </div>
+          <div class="product-body">
+            <h3 class="product-titl">Camisa Jordan </h3>
+            <p class="product-desc">Material: <span class="field material">100% Algodón.</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">S,M,L</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Negro Color Unico</span></p>
+            <p class="product-price">COP <span class="price">95.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+
+
+
+
+
+        
+        <article class="product" data-id="z1" data-cat="Gorra" data-price="80.000">
+          <div class="product-media">
+            <img src="Gorra Jordan.webp" alt="Zapatos - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Gorra Jordan</h3>
+            <p class="product-desc">Material: <span class="field material">100% poliéster; banda para el sudor: 91% poliéster, 9% spandex</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">S,M,L</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Blanco,,Negro y Azul</span></p>
+            <p class="product-price">COP <span class="price">80.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+
+       
+        <article class="product" data-id="a1" data-cat="accesorios" data-price="35000">
+          <div class="product-media">
+            <img src="Canguro Nike.webp" alt="Accesorio - ejemplo" />
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Accesorio — Canguro Nike</h3>
+            <p class="product-desc">Material: <span class="field material">Cuero</span></p>
+            <p class="product-desc">Tallas: <span class="field sizes">Única</span></p>
+            <p class="product-desc">Colores: <span class="field colors">Negro con logtipos de Nike</span></p>
+            <p class="product-price">COP <span class="price">130.000</span></p>
+
+            <div class="product-actions">
+              <label>Cantidad
+                <input type="number" class="qty" min="1" value="1" />
+              </label>
+              <button class="btn btn-add">Agregar al carrito</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+ 
+
+
+
+
+
+
+
+    <section id="galeria" class="section">
+      <h2 class="section-title">Galería</h2>
+      <div class="gallery-grid">
+       
+        <img src="Zapatilla Nike.jpeg" alt="Galería 1" />
+        <img src="Zapatilla Reebok roja con azul.jpeg" alt="Galería 2" />
+        <img src="Zapatilla Reebok Verde.jpeg" alt="Galería 3" />
+        <img src="Zapatillas Adidad Blancas.jpeg" alt="Galería 4"/>
+        <img src="Zapatillas Adidas Negras.jpeg" alt="Galeria 5"/>
+        <img src="Zapatillas New Balance Negras.jpeg "  alt="Galeria  6"/>
+        <img src="Zapatillas Puma.jpeg"  alt="Galeria 7"/>
+        <img src="Zapatillas Nike TN Doradas.jpeg" alt="Galeria 8"/>
+        <img src="Zapatillas Adidas Totalmente Blancas.jpeg" alt="Galeria 9"/>
+        <img src="ZAPATILLA JORDAN AURA.webp" alt="Galeria  10"/>
+
+      </div>
+    </section>
+
+
+    <section id="contacto" class="section contact-section">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Habla con nosotros</h3>
+          <p>Envía un mensaje directo por WhatsApp y te atenderemos rápidamente.</p>
+          <a class="btn btn-primary whatsapp" href="https://wa.me/573217292332?text=Hola%20The%20Dealer%20Shop%20—%20quiero%20informaci%C3%B3n" target="_blank" rel="noopener">WhatsApp: 321 729 2332</a>
+          <p class="ceo">CEO: <a href="https://instagram.com/mosquerx_" target="_blank" rel="noopener">@mosquerx_</a></p>
+        </div>
+
+        <form id="contactForm" class="contact-card form" onsubmit="return false;">
+          <h3>Envíanos un mensaje</h3>
+          <label>Nombre
+            <input type="text" id="name" required />
+          </label>
+          <label>WhatsApp / Teléfono
+            <input type="text" id="phone" />
+          </label>
+          <label>Mensaje
+            <textarea id="message" rows="4" required></textarea>
+          </label>
+          <button class="btn btn-ghost" id="sendMsg">Enviar</button>
+         
+      </div>
+    </section>
+  </main>
+
+
+  <div id="cart-modal" class="cart-modal" aria-hidden="true">
+    <div class="cart-panel">
+      <button class="cart-close" id="close-cart">✕</button>
+      <h3>Carrito de compras</h3>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <p>Total: <strong>COP <span id="cart-total">0</span></strong></p>
+        <p class="muted">Límite máximo: COP 100.000.000</p>
+        <div class="cart-actions">
+          <button id="clear-cart" class="btn btn-ghost">Vaciar carrito</button>
+          <button id="checkout" class="btn btn-primary">Finalizar compra </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> The Dealer Shop — Cúcuta</p>
+      <div class="socials">
+        <a href="https://instagram.com/jhormitan52" target="_blank" rel="noopener"aria-label="Instagram">@jhormitan52</a>
+        <a href="https://instagram.com/mosquerx_" target="_blank" rel="noopener" aria-label="Instagram">@mosquerx_</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
